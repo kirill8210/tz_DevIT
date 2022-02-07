@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+h2, h3{
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+:root {
+    --progress-color: #0275d8;
+    --progress_element-color: #5bc0de;
+    --grey-color: #333333;
+    --litegrey-color: #999;
+    --white-color: #ffffff;
+    --payment-color: #8a8a8a;
+    --payment_status-color: #232323;
+    --payment_activ-color: #d59533;
+}
+
+.progress{
+    width: 100%;
+    height: 20px;
+    background: var(--progress_element-color);
+}
+
+.progress_element{
+    width: 20%;
+    height: 20px;
+    background: var(--progress-color)
+}
+
+#table{
+    margin: 0 10px;
+}
+
+.table{
+    display: table;
+    width: 100%;
+    border: 1px solid var(--grey-color);
+}
+
+.table_menu, .table_item{
+    display: flex;
+}
+
+.table_menu > div{
+    font-weight: 600;
+    padding: 15px 5px;
+}
+
+.table_item > div{
+    font-weight: 400;
+    padding: 5px;
+}
+
+.table_menu > div, .table_item > div{
+    display: flex!important;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--litegrey-color);
+    font-size: 16px;
+}
+
+.table_item_status label {
+    position: relative;
+    padding-left:30px;
+    cursor: pointer;
+    left: 10px;
+    bottom: 10px;
+}
+
+.table_item_status label input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    width:0;
+    height:0;
+}
+
+.table_item_status label span {
+    position: absolute;
+    top:0;
+    left:0;
+    width:20px;
+    height:20px;
+    background-color: var(--white-color);
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+    transition: .3s background-color;
+}
+
+.table_item_status label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid var(--grey-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.table_item_status label input:checked ~ span:after {
+    display:block;
+}
+
+.table_item_date{
+    font-weight: 600;
+}
+
+.table_item_customer{
+    color: var(--payment-color);
+}
+
+.table_item_payment{
+    min-width: 145px;
+}
+
+.table_item_payment span{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: var(--payment-color);
+    border-radius: 25px;
+    margin: 5px 0;
+    padding: 5px 10px 5px 5px;
+}
+
+.payment_status span{
+    display: block;
+    width: 0;
+    height: 0;
+    border: 1px solid var(--payment_status-color);
+    border-radius: 50%;
+    background: var(--payment_status-color);
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.table_item_payment .active{
+    background: var(--payment_activ-color);
+}
+
+.table_item_fulfillment span{
+    display: flex;
+    align-content: center;
+    background: var(--payment_activ-color);
+    border-radius: 25px;
+    margin: 5px 0;
+    padding: 5px 10px 5px 5px;
+}
+
+.fulfillment_status span {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 1px solid var(--payment_status-color);
+    border-radius: 50%;
+    background: var(--payment_activ-color);
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.table_item_tag span.active{
+    background: var(--payment-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.filter_search{
+    flex-grow: 1;
+    position: relative;
+}
+
+.filter_search input {
+    outline: none;
+    border: 1px solid var(--payment-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+}
+
+.filter_search button{
+    background: inherit;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.filter_search button img{
+    height: 20px;
+    width: 20px;
+}
+
+.filter_options{
+    display: flex;
+    border: 1px solid var(--payment-color);
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.options_columns{
+    border-left: 1px solid var(--payment-color)!important;
+    border-right: 1px solid var(--payment-color)!important;
+    border-radius: 0!important;
+}
+
+.filter_options select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.filter_options select option{
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.filter_others{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid var(--payment-color);
+    border-radius: 5px;
+    width: 45px;
+    cursor: pointer;
+}

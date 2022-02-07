@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tz_DevIT</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<div>
+    <h2>Задание HTML & CSS</h2>
+    <h3>
+        a) Сделайте индикатор прогресса.
+        Ширина самого элемента 100%, высота 20px.
+        Значение индикатора должно легко задаваться через ширину,
+        как в процентах, так и пикселях.
+    </h3>
+    <h3>
+        b) Сверстать таблицу.
+        Без использования table.
+        ТОЛЬКО ВЕРСТКА И МОЖНО БЕЗ ИКОНОК.
+    </h3>
+</div>
+<div>
+    <h2>Индикатор прогресса</h2>
+    <div class="progress">
+        <div class="progress_element"></div>
+    </div>
+</div>
+
+<div id="table">
+    <h2>Таблица</h2>
+    <div>
+        <div class="filter">
+            <form class="filter_search">
+                <input type="text" placeholder="Filter orders">
+                <button type="submit">
+                    <img src="img/search_icon.png" alt="">
+                </button>
+            </form>
+            <div class="filter_options">
+                <select name="options_filter">
+                    <option value="1" selected="selected">Filter</option>
+                    <option value="2">1 2 3</option>
+                    <option value="3">3 2 1</option>
+                </select>
+                <select name="options_columns" class="options_columns">
+                    <option value="1" selected="selected">Columns</option>
+                    <option value="2">1 Columns</option>
+                    <option value="3">2 Columns</option>
+                </select>
+                <select name="options_sort">
+                    <option value="1" selected="selected">Sort</option>
+                    <option value="2">Sort 1 2 3</option>
+                    <option value="3">Sort a b c</option>
+                </select>
+            </div>
+            <div class="filter_others">...</div>
+        </div>
+        <div class="table">
+            <div class="table_menu">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div>Order</div>
+                <div>Date</div>
+                <div>Customer</div>
+                <div>Total</div>
+                <div>Payment status</div>
+                <div>Fulfillment status</div>
+                <div>Items</div>
+                <div>Delivery method</div>
+                <div>Tag</div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1057</div>
+                <div class="table_item_date">Thursday at 02:38 pm</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$0.00</div>
+                <div class="table_item_payment"><span class="payment_status"><span></span>Paid</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1056</div>
+                <div class="table_item_date">Thursday at 02:37 pm</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$0.00</div>
+                <div class="table_item_payment"><span class="payment_status"><span></span>Paid</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1055</div>
+                <div class="table_item_date">Thursday at 02:32 pm</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$0.00</div>
+                <div class="table_item_payment"><span class="payment_status"><span></span>Paid</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1054</div>
+                <div class="table_item_date">Thursday at 02:30 pm</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$0.00</div>
+                <div class="table_item_payment"><span class="payment_status"><span></span>Paid</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1053</div>
+                <div class="table_item_date">Wednesday at 11:42 am</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$11,111.00</div>
+                <div class="table_item_payment"><span class="payment_status active"><span></span>Payment pending</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span class="active">333</span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1052</div>
+                <div class="table_item_date">Wednesday at 11:40 am</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$11,111.00</div>
+                <div class="table_item_payment"><span class="payment_status active"><span></span>Payment pending</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+            <div class="table_item">
+                <div class="table_item_status">
+                    <label>
+                        <input type="checkbox" />
+                        <span></span>
+                    </label>
+                </div>
+                <div class="table_item_order">#1051</div>
+                <div class="table_item_date">Wednesday at 11:38 am</div>
+                <div class="table_item_customer">No customer</div>
+                <div class="table_item_total">$11,111.00</div>
+                <div class="table_item_payment"><span class="payment_status active"><span></span>Payment pending</span></div>
+                <div class="table_item_fulfillment"><span class="fulfillment_status"><span></span>Unfulfilled</span></div>
+                <div class="table_item_items">1 item</div>
+                <div class="table_item_delivery"></div>
+                <div class="table_item_tag"><span></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
